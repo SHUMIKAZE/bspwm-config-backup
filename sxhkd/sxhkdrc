@@ -1,12 +1,20 @@
-#################################
-######  КОМБИНАЦИИ КЛАВИШ  ######
-#################################
+#===========================================
+#
+#
+#	███████╗██╗  ██╗██╗  ██╗██╗  ██╗██████╗ 
+#	██╔════╝╚██╗██╔╝██║  ██║██║ ██╔╝██╔══██╗
+#	███████╗ ╚███╔╝ ███████║█████╔╝ ██║  ██║
+#	╚════██║ ██╔██╗ ██╔══██║██╔═██╗ ██║  ██║
+#	███████║██╔╝ ██╗██║  ██║██║  ██╗██████╔╝
+#	╚══════╝╚═╝  ╚═╝╚═╝  ╚═╝╚═╝  ╚═╝╚═════╝
+#
+#===========================================
 
 #TERMINAL
 super + Return
 #	urxvt
-#	alacritty
-	kitty
+	alacritty
+#	kitty
 
 #ROFI
 super + @space
@@ -16,13 +24,17 @@ super + @space
 {_,shift + }Print
 	scrot {_,-s }~/Pictures/scrinshots/%Y-%m-%d_%H-%M-%S.png
 
+#XCOLOR
+super + a
+	xcolor -s
+
 #THUNAR
 super + F1
 	thunar
 
 #FASTFETCH
-super + alt + F1
-	kitty -e sh -c "fastfetch; read"
+super + alt + z
+	alacritty -e sh -c "fastfetch; read"
 
 #TELEGRAM
 super + F2
@@ -34,15 +46,15 @@ super + F3
 
 #BSPWM
 super + shift + F1
-	kitty -e micro ~/.config/bspwm/bspwmrc
+	alacritty -e micro ~/.config/bspwm/bspwmrc
 
 #SXHKD
 super + shift + F2
-	kitty -e micro ~/.config/sxhkd/sxhkdrc
+	alacritty -e micro ~/.config/sxhkd/sxhkdrc
 
 #POLYBAR
 super + shift + F3
-	kitty -e micro ~/.config/polybar/config.ini
+	alacritty -e micro ~/.config/polybar/config.ini
 
 
 #ПЕРЕЗАГРУЗИТЬ КОНФИГ SXHKD

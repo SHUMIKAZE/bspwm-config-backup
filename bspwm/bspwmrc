@@ -1,4 +1,15 @@
 #! /bin/sh
+#================================================
+#
+#
+#	██████╗ ███████╗██████╗ ██╗    ██╗███╗   ███╗
+#	██╔══██╗██╔════╝██╔══██╗██║    ██║████╗ ████║
+#	██████╔╝███████╗██████╔╝██║ █╗ ██║██╔████╔██║
+#	██╔══██╗╚════██║██╔═══╝ ██║███╗██║██║╚██╔╝██║
+#	██████╔╝███████║██║     ╚███╔███╔╝██║ ╚═╝ ██║
+#	╚═════╝ ╚══════╝╚═╝      ╚══╝╚══╝ ╚═╝     ╚═╝
+#
+#================================================
 
 $HOME/.config/polybar/launch.sh
 pgrep -x sxhkd > /dev/null || sxhkd &
@@ -7,7 +18,7 @@ numlockx &
 bspc monitor -d 1 2 3 4 5 6 7 8 9 G
 
 bspc config border_width          1
-bspc config window_gap            5
+bspc config window_gap            7
 
 bspc config normal_border_color   "#000000"
 bspc config active_border_color   "#000000"
