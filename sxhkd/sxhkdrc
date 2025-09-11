@@ -34,7 +34,7 @@ super + F1
 
 #FASTFETCH
 super + alt + z
-	alacritty -e sh -c "fastfetch; read"
+	alacritty -e sh -c "neofetch; read"
 
 #TELEGRAM
 super + F2
