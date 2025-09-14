@@ -20,12 +20,12 @@ numlockx &
 
 bspc monitor -d 1 2 3 4 5 6 7 8 9 0
 
-bspc config border_width          2
+bspc config border_width          3
 bspc config window_gap            7
 
 bspc config normal_border_color   "#555555"
 bspc config active_border_color   "#000000"
-bspc config focused_border_color  "#ffffff"
+bspc config focused_border_color  "#6a80dd"
 bspc config presel_feedback_color "#23252e"
 
 bspc config focus_follows_pointer true

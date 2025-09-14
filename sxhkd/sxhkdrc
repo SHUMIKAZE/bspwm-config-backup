@@ -17,11 +17,15 @@ super + Return
 #	kitty
 
 #ROFI
-super + @space
+super + d
 	rofi -show drun
 
-#SCROT
+#SCROT TO XCLIP
 {_,shift + }Print
+	scrot {_,-s }- | xclip -selection clipboard -t image/png
+
+#SCROT TO ~/Pictures/scrinshots
+ctrl + {_,shift + }Print
 	scrot {_,-s }~/Pictures/scrinshots/%Y-%m-%d_%H-%M-%S.png
 
 #XCOLOR
@@ -30,7 +34,7 @@ super + a
 
 #THUNAR
 super + F1
-	thunar
+	alacritty -e ranger
 
 #FASTFETCH
 super + alt + z
@@ -43,6 +47,14 @@ super + F2
 #FIREFOW
 super + F3
 	firefox
+
+#FIREFOW
+super + F4
+	firefox --private-window
+
+#TTY-CLOCK
+super + F5
+	alacritty -e tty-clock -t -s
 
 #BSPWM
 super + shift + F1
@@ -64,6 +76,10 @@ super + e
 #ВЫЙТИ/ПЕРЕЗАГРУЗИТЬ BSPWM
 super + alt + {q,r}
         bspc {quit,wm -r}
+
+#СПРЯТАТЬ/ПОКАЗАТЬ ПОЛИБАР
+super + p
+	sh $HOME/bin/toggle-polybar
 
 #ПЕРЕЗАГРУЗКА
 super + ctrl + r
@@ -94,8 +110,8 @@ super + {_,shift + }{1-9,0}
 	bspc {desktop -f,node -d} '^{1-9,10}'
 
 #ЗАКРЫТЬ ОКНО ИЛИ УБИТЬ ЕГО
-super + {_, shift + }c
-	bspc node -{c}
+super + c
+	bspc node -c
 
 #ПЕРЕМЕЩЕНИЕ ТАЙЛИНГОВЫХ ОКОН
 super + {_,shift + }{Left,Down,Up,Right}
