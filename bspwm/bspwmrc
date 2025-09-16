@@ -12,6 +12,8 @@
 #================================================
 
 
+export GTK_THEME=ZorinPurple-Dark
+export GTK_ICON_THEME=ZorinPurple-Dark
 $HOME/.config/polybar/launch.sh
 pgrep -x sxhkd > /dev/null || sxhkd &
 pgrep -x picom > /dev/null || picom &

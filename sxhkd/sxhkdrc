@@ -56,17 +56,21 @@ super + F4
 super + F5
 	alacritty -e tty-clock -t -s
 
+#BASHTOP
+super + F6
+	alacritty -e bashtop
+
 #BSPWM
 super + shift + F1
-	alacritty -e micro ~/.config/bspwm/bspwmrc
+	alacritty -e nvim ~/.config/bspwm/bspwmrc
 
 #SXHKD
 super + shift + F2
-	alacritty -e micro ~/.config/sxhkd/sxhkdrc
+	alacritty -e nvim ~/.config/sxhkd/sxhkdrc
 
 #POLYBAR
 super + shift + F3
-	alacritty -e micro ~/.config/polybar/config.ini
+	alacritty -e nvim ~/.config/polybar/config.ini
 
 
 #ПЕРЕЗАГРУЗИТЬ КОНФИГ SXHKD
